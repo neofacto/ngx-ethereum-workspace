@@ -1,16 +1,9 @@
 import { NgModule } from '@angular/core';
-import { NgxEthereumComponent } from './ngx-ethereum.component';
-
-
+import { ShortAddressPipe } from './pipes/short-address.pipe';
 
 @NgModule({
-  declarations: [
-    NgxEthereumComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    NgxEthereumComponent
-  ]
+  declarations: [ShortAddressPipe],
+  imports: [],
+  exports: [],
 })
-export class NgxEthereumModule { }
+export class NgxEthereumModule {}
