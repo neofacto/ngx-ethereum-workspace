@@ -13,12 +13,12 @@ describe('ShortAddressPipe', () => {
     ).toEqual('0x7D4c...6A57');
   });
 
-  it('the pipe is no longer displayed if the address is null', () => {
+  it('the pipe is no longer displayed if the account address is null', () => {
     const pipe = new ShortAddressPipe();
     expect(pipe.transform(null)).toEqual('');
   });
 
-  it('the pipe is no longer displayed if the address is undefined', () => {
+  it('the pipe is no longer displayed if the account address is undefined', () => {
     const pipe = new ShortAddressPipe();
     expect(pipe.transform(undefined)).toEqual('');
   });
