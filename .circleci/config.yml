@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/ngx-ethereum-workspace
     docker:
-      - image: circleci/node:16-browsers
+      - image: cimg/node:16-browsers
     steps:
       - checkout
       - restore_cache:
@@ -13,4 +13,4 @@ jobs:
           key: ngx-ethereum-workspace-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - "node_modules"
-      - run: yarn run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+      - run: yarn test --no-watch --no-progress --browsers=ChromeHeadlessCI
