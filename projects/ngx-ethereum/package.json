@@ -1,5 +1,5 @@
 {
-  "name": "ngx-ethereum",
+  "name": "@neofacto/ngx-ethereum",
   "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": ">=12.0.0",
